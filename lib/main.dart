@@ -15,27 +15,14 @@ class MyApp extends StatelessWidget{
         ),
         body: Center(
         child: Container(
-          child: new Text("hello!!!!!",
-          style: TextStyle(
-            fontSize: 40.0,
-            color: Colors.blue,
-            ),
-            ),
-           alignment: Alignment.topLeft, 
-           width: 500.0,
-           height: 400.0,
-          //  color: Colors.amberAccent,
-           padding: const EdgeInsets.fromLTRB(10.0, 40.0, 0.0, 0.0),
-           margin: const EdgeInsets.all(20.0),
-           decoration: new BoxDecoration(
-             gradient: const LinearGradient(
-               colors: [
-               Colors.lightBlue,
-               Colors.greenAccent,
-               Colors.purple,
-               ]
-             )
-           )
+          child: new Image.network(
+            'https://img4.mukewang.com/szimg/5c7e6835087ef3d806000338.jpg',
+            scale: 2.0,
+            repeat: ImageRepeat.repeat,
+          ),
+          width: 400.0,
+          height: 300.0,
+          color: Colors.lightBlue,
         )
         )
       )
