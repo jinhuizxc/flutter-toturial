@@ -1,9 +1,19 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(MyApp(
+  // 传递数据
+  // 生成器 .generate(length, generator)
+  items: new List<String>.generate(1000, (i) => 'Item $i')
+));
 
 
 class MyApp extends StatelessWidget {
+
+  // 接收参数
+  List<String> items;
+  // 构造方法
+//  MyApp({Key key, @required this.items}):super(key:key);
+  MyApp({Key key, @required this.items});
 
   @override
   Widget build(BuildContext context) {
@@ -13,12 +23,13 @@ class MyApp extends StatelessWidget {
             appBar: AppBar(
               title: Text("ListViewWidget"),
             ),
-            body: Center(
-              child: Container(
-                height: 200.0,
-                child: MyList1(),
-              ),
-//                child: MyList2()
+            body: new ListView.builder(
+                itemCount: items.length,
+                itemBuilder: (context, index){
+                  return new ListTile(
+                    title: new Text('${items[index]}'),
+                  );
+                },
             )
         )
     );
@@ -26,6 +37,15 @@ class MyApp extends StatelessWidget {
 
 }
 
+/**
+ * Center(
+    child: Container(
+    height: 200.0,
+    child: MyList1(),
+    ),
+    //                child: MyList2()
+    )
+ */
 class MyList1 extends StatelessWidget{
 
   @override

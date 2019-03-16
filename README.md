@@ -151,4 +151,45 @@ body: Container(
     }
 ```
 
+## 动态列表的使用
+- Dart中List类型的使用，可以简单理解为list中的数组
+- 声明list的4种方式
+- 传递和接受参数， 实现动态列表的基础
+- 动态列表案例制作
+
+```
+ // 传递数据
+  // 生成器 .generate(length, generator)
+  items: new List<String>.generate(1000, (i) => 'Item $i')
+
+  class MyApp extends StatelessWidget {
+    // 接收参数
+    List<String> items;
+    // 构造方法
+  //  MyApp({Key key, @required this.items}):super(key:key);
+    MyApp({Key key, @required this.items});
+
+    @override
+    Widget build(BuildContext context) {
+      return MaterialApp(
+          title: 'TextWidget',
+          home: Scaffold(
+              appBar: AppBar(
+                title: Text("ListViewWidget"),
+              ),
+              body: new ListView.builder(
+                  itemCount: items.length,
+                  itemBuilder: (context, index){
+                    return new ListTile(
+                      title: new Text('${items[index]}'),
+                    );
+                  },
+              )
+          )
+      );
+    }
+
+  }
+```
+
 
