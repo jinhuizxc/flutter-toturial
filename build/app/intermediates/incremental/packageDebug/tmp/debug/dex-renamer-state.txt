@@ -1,4 +1,4 @@
-#Sat Mar 16 14:11:42 CST 2019
+#Sat Mar 16 15:04:49 CST 2019
 base.0=C\:\\Users\\jinhu\\Desktop\\flutter\\flutter_toturial\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

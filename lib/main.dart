@@ -1,40 +1,31 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(MyApp(
-  // 传递数据
-  // 生成器 .generate(length, generator)
-  items: new List<String>.generate(1000, (i) => 'Item $i')
-));
-
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
-
-  // 接收参数
-  List<String> items;
-  // 构造方法
-//  MyApp({Key key, @required this.items}):super(key:key);
-  MyApp({Key key, @required this.items});
-
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        title: 'TextWidget',
-        home: Scaffold(
-            appBar: AppBar(
-              title: Text("ListViewWidget"),
-            ),
-            body: new ListView.builder(
-                itemCount: items.length,
-                itemBuilder: (context, index){
-                  return new ListTile(
-                    title: new Text('${items[index]}'),
-                  );
-                },
-            )
-        )
+      title: '电影海报实例',
+      home: Scaffold(
+          appBar: AppBar(
+            title: new Text('电影海报实例'),
+          ),
+          body: GridView.count(
+            padding: const EdgeInsets.all(10.0),
+            crossAxisSpacing: 10.0,
+            crossAxisCount: 3,
+            children: <Widget>[
+              new Text("text"),
+              new Text("text"),
+              new Text("text"),
+              new Text("text"),
+              new Text("text"),
+              new Text("text"),
+            ],
+          )),
     );
   }
-
 }
 
 /**
@@ -46,26 +37,16 @@ class MyApp extends StatelessWidget {
     //                child: MyList2()
     )
  */
-class MyList1 extends StatelessWidget{
-
+class MyList1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return ListView(
       scrollDirection: Axis.horizontal,
       children: <Widget>[
-        new Container(
-          width: 180.0,
-          color: Colors.lightBlue
-        ),
-        new Container(
-            width: 180.0,
-            color: Colors.amber
-        ),
-        new Container(
-            width: 180.0,
-            color: Colors.red
-        )
+        new Container(width: 180.0, color: Colors.lightBlue),
+        new Container(width: 180.0, color: Colors.amber),
+        new Container(width: 180.0, color: Colors.red)
       ],
     );
   }
@@ -77,10 +58,14 @@ class MyList2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListView(
       children: <Widget>[
-        new Image.network('https://img4.mukewang.com/szimg/5c18d2d8000141c506000338.jpg'),
-        new Image.network('https://img4.mukewang.com/szimg/5c7e6835087ef3d806000338.jpg'),
-        new Image.network('https://img2.mukewang.com/szimg/5c3ef588088403df06000338.jpg'),
-        new Image.network('https://img3.mukewang.com/szimg/5b3082da0001d7e905400300.jpg'),
+        new Image.network(
+            'https://img4.mukewang.com/szimg/5c18d2d8000141c506000338.jpg'),
+        new Image.network(
+            'https://img4.mukewang.com/szimg/5c7e6835087ef3d806000338.jpg'),
+        new Image.network(
+            'https://img2.mukewang.com/szimg/5c3ef588088403df06000338.jpg'),
+        new Image.network(
+            'https://img3.mukewang.com/szimg/5b3082da0001d7e905400300.jpg'),
       ],
       scrollDirection: Axis.horizontal,
     );
