@@ -26,26 +26,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dart" value="988" />
-          <entry key="md" value="1081" />
+          <entry key="dart" value="1167" />
+          <entry key="md" value="1139" />
           <entry key="txt" value="37" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Dart" value="988" />
-          <entry key="PLAIN_TEXT" value="1118" />
+          <entry key="Dart" value="1167" />
+          <entry key="PLAIN_TEXT" value="1176" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="dart" value="3" />
+          <entry key="dart" value="5" />
           <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Dart" value="3" />
+          <entry key="Dart" value="5" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
@@ -53,20 +53,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/main.dart">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+            <state relative-caret-position="346">
+              <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://E:/Flutter/SDK/packages/flutter/lib/src/rendering/sliver_grid.dart">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="313" column="72" lean-forward="true" selection-start-line="313" selection-start-column="6" selection-end-line="313" selection-end-column="72" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="516">
-              <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
+            <state relative-caret-position="157">
+              <caret line="241" column="10" selection-start-line="241" selection-start-column="10" selection-end-line="241" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -84,8 +93,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/lib/main.dart" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/lib/main.dart" />
       </list>
     </option>
   </component>
@@ -195,11 +204,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552718721526</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="GridView网格列表的使用">
+      <created>1552720062554</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1552720062554</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="810" y="0" width="656" height="830" extended-state="0" />
+    <frame x="810" y="13" width="656" height="832" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.4147157" />
@@ -264,7 +280,8 @@
     <MESSAGE value="容器包裹ListView" />
     <MESSAGE value="横向列表的使用 + 自定义类加载组件；" />
     <MESSAGE value="动态列表的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态列表的使用" />
+    <MESSAGE value="GridView网格列表的使用" />
+    <option name="LAST_COMMIT_MESSAGE" value="GridView网格列表的使用" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://E:/Flutter/SDK/packages/flutter/lib/src/widgets/framework.dart">
@@ -281,17 +298,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+    <entry file="file://E:/Flutter/SDK/packages/flutter/lib/src/rendering/sliver_grid.dart">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+        <state relative-caret-position="263">
+          <caret line="313" column="72" lean-forward="true" selection-start-line="313" selection-start-column="6" selection-end-line="313" selection-end-column="72" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="516">
-          <caret line="230" lean-forward="true" selection-start-line="230" selection-end-line="230" />
+        <state relative-caret-position="157">
+          <caret line="241" column="10" selection-start-line="241" selection-start-column="10" selection-end-line="241" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/main.dart">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
         </state>
       </provider>
     </entry>

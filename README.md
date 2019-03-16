@@ -236,14 +236,14 @@ body: Container(
       );
 ```
 - padding: 设置内边距的属性
-```
-  padding: const EdgeInsets.all(10.0),
-```
-- crossAxisSpacing: 网格间的空隙
+- padding: const EdgeInsets.all(10.0),
+- mainAxisSpacing: 2.0, 沿主轴的每个子元素之间的逻辑像素数。
+- crossAxisSpacing: 2.0 沿横轴的每个子元素之间的逻辑像素数。
+- childAspectRatio: 每个孩子的横轴与主轴的比例(宽和长的比)
 - crossAxisCount:网格的列数
 - 图片网格列表的使用
 
-## 图片资源
+## 图片资源(时光网: http://theater.mtime.com/China_Beijing/)
 ```
 new Image.network('http://img5.mtime.cn/mt/2018/10/22/104316.77318635_180X260X4.jpg', fit: BoxFit.cover,),
 new Image.network('http://img5.mtime.cn/mt/2018/10/10/112514.30587089_180X260X4.jpg', fit: BoxFit.cover,),
