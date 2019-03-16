@@ -130,4 +130,25 @@ body: Container(
         )
 ```
 
+- 自定义类，去加载组件
+```
+    1. child: MyList()
+    // 重新自定义类
+    2. class MyList extends StatelessWidget {
+      @override
+      Widget build(BuildContext context) {
+        return new
+        ListView(
+          children: <Widget>[
+            new Image.network('https://img4.mukewang.com/szimg/5c18d2d8000141c506000338.jpg'),
+            new Image.network('https://img4.mukewang.com/szimg/5c7e6835087ef3d806000338.jpg'),
+            new Image.network('https://img2.mukewang.com/szimg/5c3ef588088403df06000338.jpg'),
+            new Image.network('https://img3.mukewang.com/szimg/5b3082da0001d7e905400300.jpg'),
+          ],
+          scrollDirection: Axis.horizontal,
+        );
+      }
+    }
+```
+
 
